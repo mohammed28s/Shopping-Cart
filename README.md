@@ -219,14 +219,7 @@ Default: MIT. If you want a different license, tell me and I’ll add a LICENSE 
 ## 📬 Contact
 
 Maintainer: Mohammed (mohammed28s) — https://github.com/mohammed28s  
-Email: hello@you.com (replace with your preferred contact)
+Email: mohammed.23s@outlook.com
 
 ---
 
-If you want, I can update this README to match your repo exactly — for example:
-- use Maven vs Gradle commands based on your build tool,
-- include the real package names and main class,
-- add the exact Dockerfile and docker-compose.yml,
-- add real screenshots and a sample generated certificate.
-
-I’ve tailored this README for a Java 25 Spring Boot backend and kept it concise, colorful, and easy to scan. Tell me your build tool (Maven or Gradle), the backend folder name (backend/server), and whether there’s a frontend folder — I’ll produce a final README matched to your repo and can push it as a commit or open a PR for you.
