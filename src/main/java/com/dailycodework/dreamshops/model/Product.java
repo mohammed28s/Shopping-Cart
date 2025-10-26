@@ -1,22 +1,30 @@
 package com.dailycodework.dreamshops.model;
 
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.OneToMany;
-
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
-import java.sql.DataTruncation;
 import java.util.List;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
 public class Product {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String brand;
-    private BigDecimal price;
+    private BigDecimal price;   // The BigDecimal for the accurate rounding for the price value
     private Integer inventory;
     private String description;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id")
     private Category category;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
