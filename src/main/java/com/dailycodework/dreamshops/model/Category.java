@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Category {
+public class Category {     // This is the category of the product
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

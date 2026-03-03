@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Product {
+public class Product {    // This is the info about the product
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
